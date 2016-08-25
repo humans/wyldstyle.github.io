@@ -155,7 +155,7 @@
                         u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
                         u-ml:2.5r@l u-mw:41.25r u-mt:0@l
                     ]">
-                    <code class="preview__code">.block { d:b } => .block { display: block; }</code>
+                    <code class="preview__code [ a-ff:code ]">.block { d:b } => .block { display: block; }</code>
                 </div>
             </section>
 
@@ -179,7 +179,7 @@
                         u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
                         u-mw:41.25r u-mt:0@l
                     ]">
-                    <code class="preview__code">
+                    <code class="preview__code [ a-ff:code ]">
                         &lt;h1 class="brand [ u-fz:3r@l ]"&gt;&lt;/h1&gt;
                     </code>
                 </div>
@@ -204,7 +204,7 @@
                         u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
                         u-ml:2.5r@l u-mw:41.25r u-mt:0@l
                     ]">
-                    <code class="preview__code">wyldstyle --watch</code>
+                    <code class="preview__code [ a-ff:code ]">wyldstyle --watch</code>
                 </div>
             </section>
 
@@ -229,20 +229,20 @@
                         u-mt:1.5r u-w:100p a-bgc:$ocean u-p:2r a-c:$white a-ff:code
                         u-mw:41.25r u-mt:0@l
                     ]">
-                    <code class="preview__code [ u-ws:p ]">
+                    <code class="preview__code [ u-ws:p a-ff:code ]">
 {
-  breakpoints: {
-    m:  breakpoint(tablet),
-    l:  1024px,
-    xl: $breakpoint-retina
-  },
-  directories: [index.html],
-  output: css/utilities.css,
-  emmet: {
-    snippets: {
-      m:0a: margin: 0 auto
+    breakpoints: {
+        m:  breakpoint(tablet),
+        l:  1024px,
+        xl: $breakpoint-retina
+    },
+    directories: [index.html],
+    output: css/utilities.css,
+    emmet: {
+        snippets: {
+            m:0a: margin: 0 auto
+        }
     }
-  }
 }
                     </code>
                 </div>
