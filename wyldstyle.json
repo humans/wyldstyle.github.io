@@ -1,6 +1,7 @@
 {
     "breakpoints": {
-        "m": "40rem"
+        "m": "40rem",
+        "l": "48rem"
     },
     "directories": ["index.html"],
     "output": "css/utilities.css",

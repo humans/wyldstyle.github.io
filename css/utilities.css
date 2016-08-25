@@ -1,32 +1,39 @@
 .u-ai\:c { align-items: center; }
 .u-bdtlrs\:3px { border-top-left-radius: 3px; }
 .u-bdtrrs\:3px { border-top-right-radius: 3px; }
-.u-bgc\:\$white { background-color: $white; }
 .u-d\:fx { display: flex; }
 .u-fd\:c { flex-direction: column; }
 .u-fs\:i { font-style: italic; }
 .u-fw\:400 { font-weight: 400; }
 .u-fw\:900 { font-weight: 900; }
+.u-fx\:r { flex-direction: row; }
 .u-fxd\:c { flex-direction: column; }
 .u-fz\:1\.125r { font-size: 1.125rem; }
 .u-fz\:1\.5r { font-size: 1.5rem; }
-.u-fz\:1\.75r { font-size: 1.75rem; }
 .u-fz\:1r { font-size: 1rem; }
+.u-fz\:2\.55r { font-size: 2.55rem; }
 .u-fz\:2\.5r { font-size: 2.5rem; }
 .u-h\:1\.5r { height: 1.5rem; }
 .u-jc\:c { justify-content: center; }
 .u-lh\:1\.225 { line-height: 1.225; }
 .u-lh\:1\.5 { line-height: 1.5; }
 .u-lis\:n { list-style: none; }
+.u-mb\:1\.5r { margin-bottom: 1.5rem; }
 .u-mb\:1r { margin-bottom: 1rem; }
+.u-mb\:3r { margin-bottom: 3rem; }
 .u-ml\:0\.25r { margin-left: 0.25rem; }
 .u-ml\:1\.5r { margin-left: 1.5rem; }
+.u-mt\:1\.5r { margin-top: 1.5rem; }
 .u-mt\:1r { margin-top: 1rem; }
 .u-mw\:28\.125r { max-width: 28.125rem; }
+.u-mw\:41\.25r { max-width: 41.25rem; }
 .u-mw\:62\.0625r { max-width: 62.0625rem; }
 .u-op\:0\.5 { opacity: 0.5; }
 .u-p\:2\.25r { padding: 2.25rem; }
+.u-p\:2r { padding: 2rem; }
 .u-pb\:2\.25 { padding-bottom: 2.25em; }
+.u-pb\:2\.25r { padding-bottom: 2.25rem; }
+.u-pb\:5\.375r { padding-bottom: 5.375rem; }
 .u-pt\:2\.25r { padding-top: 2.25rem; }
 .u-pt\:2\.75r { padding-top: 2.75rem; }
 .u-pt\:5r { padding-top: 5rem; }
@@ -35,16 +42,30 @@
 .u-tt\:l { text-transform: lowercase; }
 .u-tt\:u { text-transform: uppercase; }
 .u-w\:100p { width: 100%; }
+.u-ws\:p { white-space: pre; }
 .u-ws\:pw { white-space: pre-wrap; }
 
 @media (min-width: 40rem) {
 	.u-ai\:c\@m { align-items: center; }	
 .u-d\:fx\@m { display: flex; }	
-.u-fb\:50p\@m { flex-basis: 50%; }	
-.u-fxd\:r\@m { flex-direction: row; }	
+.u-mb\:0\@m { margin-bottom: 0; }	
 .u-ml\:2\.5r\@m { margin-left: 2.5rem; }	
 .u-ml\:a\@m { margin-left: auto; }	
 .u-mt\:0\@m { margin-top: 0; }	
+.u-pb\:3\.75r\@m { padding-bottom: 3.75rem; }	
+.u-pt\:3\.75r\@m { padding-top: 3.75rem; }	
 .u-pt\:7\.25\@m { padding-top: 7.25em; }	
 .u-pt\:7\.25r\@m { padding-top: 7.25rem; }
+}
+
+@media (min-width: 48rem) {
+	.u-fb\:50p\@l { flex-basis: 50%; }	
+.u-fxd\:r\@l { flex-direction: row; }	
+.u-fxd\:rr\@l { flex-direction: row-reverse; }	
+.u-fz\:3r\@l { font-size: 3rem; }	
+.u-jc\:sb\@l { justify-content: space-between; }	
+.u-ml\:2\.5r\@l { margin-left: 2.5rem; }	
+.u-mt\:0\@l { margin-top: 0; }	
+.u-mw\:28\.75r\@l { max-width: 28.75rem; }	
+.u-ta\:l\@l { text-align: left; }
 }

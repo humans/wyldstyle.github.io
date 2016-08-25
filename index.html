@@ -48,17 +48,17 @@
                         u-lis:n u-d:fx u-jc:c u-ai:c u-mt:1r
                         u-mt:0@m
                     ]">
-                    <li class="[ u-fz:1.125r ]">
-                        <a class="navigation__link [ u-fw:400 u-td:n a-c:$white ]" href="#">Features</a>
+                    <li class="[ u-fz:1r ]">
+                        <a class="navigation__link [ u-fw:400 u-td:n a-c:$white ]" href="#features">Features</a>
                     </li>
                     <li class="[
-                            u-fz:1.125r u-ml:1.5r
+                            u-fz:1r u-ml:1.5r
                             u-ml:2.5r@m
                         ]">
                         <a class="navigation__link [ u-fw:400 u-td:n a-c:$white ]" href="#">Documentation</a>
                     </li>
                     <li class="[
-                            u-fz:1.125r u-ml:1.5r
+                            u-fz:1r u-ml:1.5r
                             u-ml:2.5r@m
                         ]">
                         <a href="https://github.com/wyldstyle/wyldstyle">
@@ -97,74 +97,163 @@
 
                 <div class="window [
                         a-bgc:$ocean u-d:fx u-fxd:c
-                        u-fxd:r@m
+                        u-fxd:r@l
                     ]">
 
                     <div class="window__pane [
-                            u-p:2.25r
-                            u-fb:50p@m
+                            u-p:2.25r a-bdb:$ocean-light
+                            u-fb:50p@l a-bdr:$ocean-light@l
                         ]">
                         <h3 class="window__name [ u-fw:900 u-tt:u u-fz:1.5r u-mb:1r ]">
                             Markup
                             <small class="pane__filename [ u-fw:400 u-fz:1r u-op:0.5 u-ml:0.25r u-tt:l ]">landing.html</small>
                         </h3>
 
-                        <pre class="pane__code pane__code--markup [ u-ws:pw a-c:$ocean-light u-lh:1.5 a-ff:functional ]"></pre>
+                        <pre class="pane__code pane__code--markup [ u-ws:pw a-c:$ocean-light u-lh:1.5 a-ff:code ]"></pre>
                     </div>
 
 
                     <div class="window__pane [
                             u-p:2.25r
-                            u-fb:50p@m
+                            u-fb:50p@l
                         ]">
                         <h3 class="window__name [ u-fw:900 u-tt:u u-fz:1.5r u-mb:1r ]">
                             Styles
-                            <small class="pane__filename [ u-fw:400 u-fz:1r u-op:0.5 u-ml:0.25r u-tt:l ]">utilities.css</small>
+                            <small class="pane__filename [ u-fw:400 u-fz:1r u-op:0.5 u-ml:0.25r u-tt:l ]">utilities.scss</small>
                         </h3>
 
-                        <pre class="pane__code pane__code--styles [ u-ws:pw a-c:$ocean-light u-lh:1.5 a-ff:functional ]"></pre>
+                        <pre class="pane__code pane__code--styles [ u-ws:pw a-c:$ocean-light u-lh:1.5 a-ff:code ]"></pre>
                     </div>
                 </div>
             </section>
         </div>
     </section>
+
+    <section class="features [ a-bgc:$yellow a-c:$ocean u-pb:5.375r ]">
+        <div class="wrapper">
+            <h2 id="features" class="feature__title [ u-fz:2.55r u-lh:1.225 u-pt:2.25r u-pb:2.25r u-tt:u u-fw:900 u-ta:c ]">
+                Out of the Box
+            </h2>
+
+            <section class="feature [
+                    u-d:fx u-fxd:c u-mb:3r
+                    u-pt:3.75r@m u-pb:3.75r@m u-mb:0@m
+                    u-fxd:r@l u-jc:sb@l
+                ]">
+
+                <div class="feature__description [
+                        u-w:100p
+                        u-mw:28.75r@l
+                    ]">
+                    <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">It uses Emmet!</h3>
+
+                    <p>Emmet is a popular markup and stylesheet builder. Using Emmet's conventions, it becomes just much easier to use.</p>
+                    <p class="[ u-mt:1r ]">Plus, between developers, there's a singular style guide!</p>
+                </div>
+
+                <div class="feature__preview [
+                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-ml:2.5r@l u-mw:41.25r u-mt:0@l
+                    ]">
+                    <code class="preview__code">.block { d:b } => .block { display: block; }</code>
+                </div>
+            </section>
+
+            <section class="feature [
+                    u-d:fx u-fxd:c u-mb:3r
+                    u-pt:3.75r@m u-pb:3.75r@m u-mb:0@m
+                    u-fxd:rr@l u-jc:sb@l u-fx:r
+                ]">
+
+                <div class="feature__description [
+                        u-w:100p
+                        u-mw:28.75r@l u-ml:2.5r@l
+                    ]">
+                    <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">Breakpoints</h3>
+
+                    <p><span class="brand [ u-tt:u u-fw:900 ]">Wyldstyle</span> prioritizes mobile first design. </p>
+                    <p class="[ u-mt:1r ]">With one look at your markup, you can immediately see which styles are for other device sizes.</p>
+                </div>
+
+                <div class="feature__preview [
+                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-mw:41.25r u-mt:0@l
+                    ]">
+                    <code class="preview__code">
+                        &lt;h1 class="brand [ u-fz:3r@l ]"&gt;&lt;/h1&gt;
+                    </code>
+                </div>
+            </section>
+
+            <section class="feature [
+                    u-d:fx u-fxd:c u-mb:3r
+                    u-pt:3.75r@m u-pb:3.75r@m u-mb:0@m
+                    u-fxd:r@l u-jc:sb@l
+                ]">
+
+                <div class="feature__description [
+                        u-w:100p
+                        u-mw:28.75r@l
+                    ]">
+                    <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">CLI Watcher</h3>
+
+                    <p>You can watch specific files to parse the utility classes on.</p>
+                </div>
+
+                <div class="feature__preview [
+                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-ml:2.5r@l u-mw:41.25r u-mt:0@l
+                    ]">
+                    <code class="preview__code">wyldstyle --watch</code>
+                </div>
+            </section>
+
+            <section class="feature [
+                    u-d:fx u-fxd:c u-mb:3r
+                    u-pt:3.75r@m u-pb:3.75r@m u-mb:0@m
+                    u-fxd:rr@l u-jc:sb@l u-fx:r
+                ]">
+
+                <div class="feature__description [
+                        u-w:100p
+                        u-mw:28.75r@l u-ml:2.5r@l
+                    ]">
+                    <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">Configurability</h3>
+
+                    <p>It can easily be configured to suit your workflow.</p>
+                    <p class="[ u-mt:1r ]">You can use direct values, variables, or even mixins for your breakpoint configuration. </p>
+                    <p class="[ u-mt:1r ]">Write your own custom snippets that will make your workflow much faster!</p>
+                </div>
+
+                <div class="feature__preview [
+                        u-mt:1.5r u-w:100p a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-mw:41.25r u-mt:0@l
+                    ]">
+                    <code class="preview__code [ u-ws:p ]">
+{
+    breakpoints: {
+        m:  breakpoint(tablet),
+        l:  1024px,
+        xl: $breakpoint-retina
+    },
+    directories: [index.html],
+    output: css/utilities.css,
+    emmet: {
+        snippets: {
+            m:0a: margin: 0 auto
+        }
+    }
+}
+                    </code>
+                </div>
+            </section>
+        </div>
+    </section>
+
     <script id="__bs_script__">
         document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.14.0.js'><\/script>".replace("HOST", location.hostname));
     </script>
 
-    <script>
-        var vim__markup = document.querySelector('.pane__code--markup');
-        var vim__styles = document.querySelector('.pane__code--styles');
-        var markup = `
-<h1 class="page-title [ u-fz:1.75r ]">Gallery</h1>
-
-<section class="gallery [ u-d:fx ]">
-    <div class="gallery__photo [ u-bgc:$white ]">
-    </div>
-</section>
-
-<section class="notification [ u-mt:2r@l ]">
-</section>`;
-
-        var styles = `
-.u-fz\\:1\\.75r { font-size: 1.75rem; }
-.u-d\\:fx { display: flex; }
-.u-bgc\\:\\$white { background-color: $white; }
-
-@media (min-width: breakpoint(large)) {
-    .u-mt\\:2\\@l { margin-top: 2rem; }
-}
-`;
-
-        markup = markup
-            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-            .replace(/"(.+)\[(.+:)(.+)\]"/g, '"<span class="highlight [ a-c:$white ]">$1[</span><span class="highlight [ a-c:$pink ]">$2</span><span class="highlight [ a-c:$cyan ]">$3</span><span class="highlight [ a-c:$white ]">]</span>"');
-
-        styles = styles
-            .replace(/.(.+){ (.+) }/g, '<span class="[ a-c:$pink ]">$1</span> { <span class="[ a-c:$cyan ]">$2</span> }');
-
-        vim__markup.innerHTML = markup;
-        vim__styles.innerHTML = styles;
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
