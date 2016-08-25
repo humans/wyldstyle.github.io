@@ -41,6 +41,7 @@ html, body {
 
 .a-bdb\:light { border-bottom: 2px solid #ffffff; }
 
+.a-ff\:body { font-family: 'proxima-nova', sans-serif; }
 .a-ff\:code { font-family: "ubuntu-mono", 'Monaco', 'Lucida Console', monospace; }
 
 .a-bdb\:\$ocean-light { border-bottom: 1px solid #5f696e; }

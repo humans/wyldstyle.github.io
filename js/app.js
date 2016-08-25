@@ -23,10 +23,10 @@ var styles = `
 
 markup = markup
     .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-    .replace(/"(.+)\[(.+:)(.+)\]"/g, '"<span class="highlight [ a-c:$white ]">$1[</span><span class="highlight [ a-c:$pink ]">$2</span><span class="highlight [ a-c:$cyan ]">$3</span><span class="highlight [ a-c:$white ]">]</span>"');
+    .replace(/"(.+)\[(.+:)(.+)\]"/g, '"<span class="highlight [ a-c:$white ]">$1[</span><span class="highlight [ a-c:$pink u-fw:700 ]">$2</span><span class="highlight [ a-c:$cyan u-fw:700 ]">$3</span><span class="highlight [ a-c:$white ]">]</span>"');
 
 styles = styles
-    .replace(/.(.+){ (.+) }/g, '<span class="[ a-c:$pink ]">$1</span> { <span class="[ a-c:$cyan ]">$2</span> }');
+    .replace(/.(.+){ (.+) }/g, '<span class="[ a-c:$pink u-fw:700 ]">$1</span> { <span class="[ a-c:$cyan u-fw:700 ]">$2</span> }');
 
 vim__markup.innerHTML = markup;
 vim__styles.innerHTML = styles;

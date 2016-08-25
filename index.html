@@ -147,15 +147,17 @@
                     ]">
                     <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">It uses Emmet!</h3>
 
-                    <p>Emmet is a popular markup and stylesheet builder. Using Emmet's conventions, it becomes just much easier to use.</p>
-                    <p class="[ u-mt:1r ]">Plus, between developers, there's a singular style guide!</p>
+                    <p><strong class="brand [ u-fw:900 u-tt:u ]">Emmet</strong> is a markup and stylesheet productivity builder. Due to Emmet's widespread use among developers, the learning curve of Wyldstyle lowers significantly.</p>
+                    <p class="[ u-mt:1r ]">By adhering to the conventions of Emmet, there's a subtle style guide practiced between the developers as well.</p>
                 </div>
 
                 <div class="feature__preview [
-                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$ocean-light
                         u-ml:2.5r@l u-mw:41.25r u-mt:0@l
                     ]">
-                    <code class="preview__code [ a-ff:code ]">.block { d:b } => .block { display: block; }</code>
+                    <code class="preview__code [ a-ff:code ]">
+                        <span class="attribute [ a-c:$pink ]">d</span>:<span class="value [ a-c:$cyan ]">b</span> <span class="action [ a-ff:body u-fw:700 u-ml:0.5r u-mr:0.5r u-fz:0.875r ]">TAB</span> <span class="attribute [ a-c:$pink u-fw:700 ]">display</span>:<span class="value [ a-c:$cyan u-fw:700 ]">block</span>
+                    </code>
                 </div>
             </section>
 
@@ -171,16 +173,16 @@
                     ]">
                     <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">Breakpoints</h3>
 
-                    <p><span class="brand [ u-tt:u u-fw:900 ]">Wyldstyle</span> prioritizes mobile first design. </p>
-                    <p class="[ u-mt:1r ]">With one look at your markup, you can immediately see which styles are for other device sizes.</p>
+                    <p><strong class="brand [ u-tt:u u-fw:900 ]">Wyldstyle</strong> prioritizes mobile first design.</p>
+                    <p class="[ u-mt:1r ]">With a single look at your markup, you can see a distinction for different breakpoints.</p>
                 </div>
 
                 <div class="feature__preview [
-                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$ocean-light
                         u-mw:41.25r u-mt:0@l
                     ]">
                     <code class="preview__code [ a-ff:code ]">
-                        &lt;h1 class="brand [ u-fz:3r@l ]"&gt;&lt;/h1&gt;
+                        &lt;h1 class="brand [ <span class="utility [ a-c:$pink ]">u-fz:3r</span><span class="breakpoint [ a-c:$cyan u-fw:700 ]">@l</span> ]"&gt;&lt;/h1&gt;
                     </code>
                 </div>
             </section>
@@ -195,16 +197,18 @@
                         u-w:100p
                         u-mw:28.75r@l
                     ]">
-                    <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">CLI Watcher</h3>
+                    <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">Watcher</h3>
 
-                    <p>You can watch specific files to parse the utility classes on.</p>
+                    <p>Watch your files so you can focus on your layout rather than writing your styles!</p>
                 </div>
 
                 <div class="feature__preview [
-                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-mt:1.5r u-w:100p u-d:fx u-ai:c u-jc:c a-bgc:$ocean u-p:2r a-c:$ocean-light
                         u-ml:2.5r@l u-mw:41.25r u-mt:0@l
                     ]">
-                    <code class="preview__code [ a-ff:code ]">wyldstyle --watch</code>
+                    <code class="preview__code [ a-ff:code ]">
+                        <span class="command [ a-c:$pink ]">wyldstyle</span> <span class="flag--watch [ a-c:$cyan u-fw:700 ]">--watch</span>
+                    </code>
                 </div>
             </section>
 
@@ -220,27 +224,27 @@
                     ]">
                     <h3 class="feature__name [ u-fz:1.5r u-mb:1.5r u-tt:u u-fw:900 ]">Configurability</h3>
 
-                    <p>It can easily be configured to suit your workflow.</p>
-                    <p class="[ u-mt:1r ]">You can use direct values, variables, or even mixins for your breakpoint configuration. </p>
-                    <p class="[ u-mt:1r ]">Write your own custom snippets that will make your workflow much faster!</p>
+                    <p>It can <em>easily</em> be configured to suit your workflow.</p>
+                    <p class="[ u-mt:1r ]">You can use direct <strong>values</strong>, <strong>variables</strong>, or <strong><em>even mixins</em></strong> for your breakpoint configuration. </p>
+                    <p class="[ u-mt:1r ]">Write <em>your own custom snippet</em> that will make your workflow much faster!</p>
                 </div>
 
                 <div class="feature__preview [
-                        u-mt:1.5r u-w:100p a-bgc:$ocean u-p:2r a-c:$white a-ff:code
+                        u-mt:1.5r u-w:100p a-bgc:$ocean u-p:2r a-c:$ocean-light
                         u-mw:41.25r u-mt:0@l
                     ]">
                     <code class="preview__code [ u-ws:p a-ff:code ]">
 {
-    breakpoints: {
-        m:  breakpoint(tablet),
-        l:  1024px,
-        xl: $breakpoint-retina
+    <span class="[ a-c:$pink ]">breakpoints</span>: {
+        <span class="[ a-c:$pink ]">m</span>:  <span class="[ a-c:$cyan ]">breakpoint(tablet)</span>,
+        <span class="[ a-c:$pink ]">l</span>:  <span class="[ a-c:$cyan ]">1024px</span>,
+        <span class="[ a-c:$pink ]">xl</span>: <span class="[ a-c:$cyan ]">$breakpoint-retina</span>
     },
-    directories: [index.html],
-    output: css/utilities.css,
-    emmet: {
-        snippets: {
-            m:0a: margin: 0 auto
+    <span class="[ a-c:$pink ]">directories</span>: [<span class="[ a-c:$cyan ]">index.html</span>],
+    <span class="[ a-c:$pink ]">output</span>: <span class="[ a-c:$cyan ]">css/utilities.css</span>,
+    <span class="[ a-c:$pink ]">emmet</span>: {
+        <span class="[ a-c:$pink ]">snippets</span>: {
+            <span class="[ a-c:$pink ]">m:0a</span>: <span class="[ a-c:$cyan ]">margin: 0 auto</span>
         }
     }
 }
@@ -250,9 +254,11 @@
         </div>
     </section>
 
-    <footer class="footer [ a-bgc:$ocean a-c:$white u-pt:1.5r u-pb:1.5r u-fz:0.8125r u-ta:c ]">
+    <footer class="footer [ a-bgc:$ocean a-c:$white u-pt:1.5r u-pb:1.5r u-fz:0.875r u-ta:c ]">
         <div class="wrapper">
-            <span class="blurb [ u-mr:0.25r u-d:b ]">I can't really think of anything to put here.</span>
+            <blockquote class="blurb [ u-mr:0.25r u-d:b ]">
+                Check out this site's source to see it action!
+            </blockquote>
             <a class="twitter [ a-c:$cyan u-fw:700 u-td:n u-d:b u-mt:0.5r ]" href="https://twitter.com/jaggygauran">@jaggygauran</a>
             <!-- <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M17 19H5c-.553 0-1-.447-1-1s.447-1 1-1h12c.553 0 1 .447 1 1s-.447 1-1 1zM17.5 5H5v9c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2h.5c1.93 0 3.5-1.57 3.5-3.5S19.43 5 17.5 5zM15 14H7V7h8v7zm2.5-4H16V7h1.5c.827 0 1.5.673 1.5 1.5s-.673 1.5-1.5 1.5z"/></svg> -->
         </div>
