@@ -1,6 +1,7 @@
 .u-ai\:c { align-items: center; }
 .u-bdtlrs\:3px { border-top-left-radius: 3px; }
 .u-bdtrrs\:3px { border-top-right-radius: 3px; }
+.u-d\:b { display: block; }
 .u-d\:fx { display: flex; }
 .u-fd\:c { flex-direction: column; }
 .u-fs\:i { font-style: italic; }
@@ -9,6 +10,7 @@
 .u-fw\:900 { font-weight: 900; }
 .u-fx\:r { flex-direction: row; }
 .u-fxd\:c { flex-direction: column; }
+.u-fz\:0\.8125r { font-size: 0.8125rem; }
 .u-fz\:1\.125r { font-size: 1.125rem; }
 .u-fz\:1\.5r { font-size: 1.5rem; }
 .u-fz\:1r { font-size: 1rem; }
@@ -25,6 +27,7 @@
 .u-ml\:0\.25r { margin-left: 0.25rem; }
 .u-ml\:1\.5r { margin-left: 1.5rem; }
 .u-mr\:0\.25r { margin-right: 0.25rem; }
+.u-mt\:0\.5r { margin-top: 0.5rem; }
 .u-mt\:1\.5r { margin-top: 1.5rem; }
 .u-mt\:1r { margin-top: 1rem; }
 .u-mw\:28\.125r { max-width: 28.125rem; }
