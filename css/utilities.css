@@ -24,7 +24,6 @@
 .u-lis\:n { list-style: none; }
 .u-mb\:1\.5r { margin-bottom: 1.5rem; }
 .u-mb\:1r { margin-bottom: 1rem; }
-.u-mb\:3\.75r { margin-bottom: 3.75rem; }
 .u-mb\:3r { margin-bottom: 3rem; }
 .u-ml\:0\.25r { margin-left: 0.25rem; }
 .u-ml\:0\.5r { margin-left: 0.5rem; }
@@ -62,11 +61,12 @@
 	.u-ai\:c\@m { align-items: center; }	
 .u-d\:fx\@m { display: flex; }	
 .u-mb\:0\@m { margin-bottom: 0; }	
+.u-mb\:2r\@m { margin-bottom: 2rem; }	
 .u-ml\:2\.5r\@m { margin-left: 2.5rem; }	
 .u-ml\:a\@m { margin-left: auto; }	
 .u-mt\:0\@m { margin-top: 0; }	
-.u-pb\:3\.75r\@m { padding-bottom: 3.75rem; }	
-.u-pt\:3\.75r\@m { padding-top: 3.75rem; }	
+.u-pb\:2r\@m { padding-bottom: 2rem; }	
+.u-pt\:2r\@m { padding-top: 2rem; }	
 .u-pt\:7\.25\@m { padding-top: 7.25em; }	
 .u-pt\:7\.25r\@m { padding-top: 7.25rem; }
 }
@@ -76,7 +76,6 @@
 .u-fxd\:r\@l { flex-direction: row; }	
 .u-fxd\:rr\@l { flex-direction: row-reverse; }	
 .u-jc\:sb\@l { justify-content: space-between; }	
-.u-mb\:0\@l { margin-bottom: 0; }	
 .u-ml\:2\.5r\@l { margin-left: 2.5rem; }	
 .u-mt\:0\@l { margin-top: 0; }	
 .u-mw\:28\.75r\@l { max-width: 28.75rem; }	
