@@ -24,6 +24,7 @@
 .u-lis\:n { list-style: none; }
 .u-mb\:1\.5r { margin-bottom: 1.5rem; }
 .u-mb\:1r { margin-bottom: 1rem; }
+.u-mb\:3\.75r { margin-bottom: 3.75rem; }
 .u-mb\:3r { margin-bottom: 3rem; }
 .u-ml\:0\.25r { margin-left: 0.25rem; }
 .u-ml\:0\.5r { margin-left: 0.5rem; }
@@ -74,8 +75,10 @@
 .u-fxd\:r\@l { flex-direction: row; }	
 .u-fxd\:rr\@l { flex-direction: row-reverse; }	
 .u-jc\:sb\@l { justify-content: space-between; }	
+.u-mb\:0\@l { margin-bottom: 0; }	
 .u-ml\:2\.5r\@l { margin-left: 2.5rem; }	
 .u-mt\:0\@l { margin-top: 0; }	
 .u-mw\:28\.75r\@l { max-width: 28.75rem; }	
+.u-ta\:c\@l { text-align: center; }	
 .u-ta\:l\@l { text-align: left; }
 }
