@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "concurrently": "^2.2.0",
+    "wyldstyle": "^1.0.6"
+  },
+  "scripts": {
+    "dev": "concurrently 'npm run wyldstyle' 'npm run live'",
+    "wyldstyle": "wyldstyle --watch",
+    "live": "browser-sync start --files index.html css/*.css js/*.js --no-open --no-notify"
+  }
+}

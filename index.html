@@ -1,28 +1,170 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Wyldstyle</title>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wyldstyle</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <!--
+        I know! I know!
 
-    <body>
-        <section class="hero">
-            <div class="wrapper">
-                <h1 class="hero__title">Wyldstyle</h1>
+        There's two different stylesheets which I can just compile and minify and
+        all that, but I really just want to show the utility file as a separate
+        thing when people inspected the element (if ever).
 
-                <p class="hero__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam tristique augue mauris, vitae finibus nisl tempus in. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam </p>
+        Besides, when HTTP/2 rolls out, it's not really gonna be an issue right?
 
-                <div class="installation">
-                    <h2 class="installation__title">Installation</h2>
+        I'm just really not in the mood to setup sass and all that.
+    -->
+    <link rel="stylesheet" href="css/boilerplate.css">
+    <link rel="stylesheet" href="css/utilities.css">
 
-                    <pre class="installation__instructions">
-                        <code>
-                            $ npm install wyldstyle --save-dev
-                            $ wyldstyle resources/views public/css/theme.css --ignore app</code>
-                    </pre>
+    <script src="https://use.typekit.net/cmu4jtb.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+</head>
+
+<body>
+    <!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
+
+    <header class="header [
+            u-ta:c a-c:$white a-bgc:$cyan u-pt:2.25r u-pb:2.25
+            u-ta:l@l
+        ]">
+        <div class="wrapper [
+            u-d:fx@m u-ai:c@m
+        ]">
+            <h1 class="header__brand brand [ u-fw:900 u-tt:u u-fz:2.5r u-lh:1.225 ]">
+                <a class="header__link [ a-c:$white u-td:n ]" href="#">Wyldstyle</a>
+            </h1>
+
+            <nav class="header__navigation [ u-ml:a@m ]">
+                <ul class="navigation__list [
+                        u-lis:n u-d:fx u-jc:c u-ai:c u-mt:1r
+                        u-mt:0@m
+                    ]">
+                    <li class="[ u-fz:1.125r ]">
+                        <a class="navigation__link [ u-fw:400 u-td:n a-c:$white ]" href="#">Features</a>
+                    </li>
+                    <li class="[
+                            u-fz:1.125r u-ml:1.5r
+                            u-ml:2.5r@m
+                        ]">
+                        <a class="navigation__link [ u-fw:400 u-td:n a-c:$white ]" href="#">Documentation</a>
+                    </li>
+                    <li class="[
+                            u-fz:1.125r u-ml:1.5r
+                            u-ml:2.5r@m
+                        ]">
+                        <a href="https://github.com/wyldstyle/wyldstyle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="32" viewBox="0 0 27 32" fill="#ffffff">
+                                <path d="M13.714 2.286q3.732 0 6.884 1.84t4.99 4.99T27.43 16q0 4.482-2.616 8.063t-6.76 4.955q-.48.09-.713-.125t-.23-.536q0-.054.01-1.366t.01-2.4q0-1.73-.93-2.53 1.02-.104 1.83-.32t1.68-.694 1.45-1.19.948-1.874.366-2.69q0-2.123-1.41-3.68.66-1.622-.144-3.64-.5-.16-1.446.196t-1.643.787l-.68.43q-1.66-.465-3.425-.465t-3.43.465q-.288-.197-.76-.483t-1.49-.69-1.52-.24q-.804 2.015-.143 3.64-1.41 1.553-1.41 3.68 0 1.516.366 2.677t.938 1.874 1.44 1.193 1.68.696 1.83.32q-.698.646-.877 1.84-.376.18-.805.27t-1.02.087-1.17-.384-.99-1.114q-.34-.57-.87-.93t-.883-.43l-.36-.057q-.376 0-.52.08t-.09.205.16.25.234.215l.125.09q.393.178.777.678t.563.91l.18.414q.23.68.784 1.098t1.196.538 1.24.124.99-.065l.41-.07q0 .68.01 1.58t.01.97q0 .32-.23.535t-.715.123q-4.146-1.37-6.762-4.95T0 15.998q0-3.734 1.838-6.886t4.99-4.99 6.885-1.84zM5.196 21.982q.054-.125-.125-.214-.17-.054-.23.036-.05.125.13.214.16.107.23-.036zm.554.607q.125-.09-.036-.29-.18-.16-.286-.06-.125.09.036.284.18.18.286.054zm.536.8q.16-.13 0-.34-.143-.23-.304-.11-.16.09 0 .32t.304.123zm.75.75q.143-.15-.07-.34-.215-.22-.358-.06-.16.142.07.34.215.212.358.052zm1.018.44q.054-.198-.232-.288-.268-.07-.34.125t.233.27q.268.106.34-.108zm1.125.09q0-.234-.31-.198-.29 0-.29.196 0 .23.302.195.286 0 .286-.196zm1.03-.18q-.04-.197-.32-.16-.29.052-.25.266t.32.143.25-.25z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero [
+            a-bgc:$cyan a-c:$white u-pt:2.75r
+            u-pt:7.25@m
+        ]">
+
+        <div class="wrapper [ u-d:fx u-fd:c u-ai:c ]">
+            <h1 class="hero__tagline [ u-fz:2.5r u-lh:1.225 u-mb:1r u-ta:c ]">
+                It's <a class="emmet [ a-c:$white u-fs:i u-td:n a-bdb:light ]" href="http://emmet.io">Emmet</a> for your classes!
+            </h1>
+
+            <p class="hero__blurb [ u-fz:1.125r u-mw:28.125r u-w:100p u-ta:c ]">
+                <strong class="brand [ u-fw:900 u-tt:u ]">Wyldstyle</strong> is a javascript CLI script that reads your markup and writes utility classes for you.
+            </p>
+
+            <section class="hero__preview terminal [
+                    u-pt:5r u-mw:62.0625r u-w:100p
+                    u-pt:7.25r@m
+                ]">
+
+                <header class="terminal__header [
+                        u-h:1.5r a-bgc:$grey u-bdtrrs:3px u-bdtlrs:3px
+                    ]"></header>
+
+                <div class="window [
+                        a-bgc:$ocean u-d:fx u-fxd:c
+                        u-fxd:r@m
+                    ]">
+
+                    <div class="window__pane [
+                            u-p:2.25r
+                            u-fb:50p@m
+                        ]">
+                        <h3 class="window__name [ u-fw:900 u-tt:u u-fz:1.5r u-mb:1r ]">
+                            Markup
+                            <small class="pane__filename [ u-fw:400 u-fz:1r u-op:0.5 u-ml:0.25r u-tt:l ]">landing.html</small>
+                        </h3>
+
+                        <pre class="pane__code pane__code--markup [ u-ws:pw a-c:$ocean-light u-lh:1.5 a-ff:functional ]"></pre>
+                    </div>
+
+
+                    <div class="window__pane [
+                            u-p:2.25r
+                            u-fb:50p@m
+                        ]">
+                        <h3 class="window__name [ u-fw:900 u-tt:u u-fz:1.5r u-mb:1r ]">
+                            Styles
+                            <small class="pane__filename [ u-fw:400 u-fz:1r u-op:0.5 u-ml:0.25r u-tt:l ]">utilities.css</small>
+                        </h3>
+
+                        <pre class="pane__code pane__code--styles [ u-ws:pw a-c:$ocean-light u-lh:1.5 a-ff:functional ]"></pre>
+                    </div>
                 </div>
-            </div>
-        </section>
-    </body>
+            </section>
+        </div>
+    </section>
+    <script id="__bs_script__">
+        document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.14.0.js'><\/script>".replace("HOST", location.hostname));
+    </script>
+
+    <script>
+        var vim__markup = document.querySelector('.pane__code--markup');
+        var vim__styles = document.querySelector('.pane__code--styles');
+        var markup = `
+<h1 class="page-title [ u-fz:1.75r ]">Gallery</h1>
+
+<section class="gallery [ u-d:fx ]">
+    <div class="gallery__photo [ u-bgc:$white ]">
+    </div>
+</section>
+
+<section class="notification [ u-mt:2r@l ]">
+</section>`;
+
+        var styles = `
+.u-fz\\:1\\.75r { font-size: 1.75rem; }
+.u-d\\:fx { display: flex; }
+.u-bgc\\:\\$white { background-color: $white; }
+
+@media (min-width: breakpoint(large)) {
+    .u-mt\\:2\\@l { margin-top: 2rem; }
+}
+`;
+
+        markup = markup
+            .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            .replace(/"(.+)\[(.+:)(.+)\]"/g, '"<span class="highlight [ a-c:$white ]">$1[</span><span class="highlight [ a-c:$pink ]">$2</span><span class="highlight [ a-c:$cyan ]">$3</span><span class="highlight [ a-c:$white ]">]</span>"');
+
+        styles = styles
+            .replace(/.(.+){ (.+) }/g, '<span class="[ a-c:$pink ]">$1</span> { <span class="[ a-c:$cyan ]">$2</span> }');
+
+        vim__markup.innerHTML = markup;
+        vim__styles.innerHTML = styles;
+    </script>
+</body>
 </html>

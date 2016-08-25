@@ -1,0 +1,17 @@
+{
+    "breakpoints": {
+        "m": "40rem"
+    },
+    "directories": ["index.html"],
+    "output": "css/utilities.css",
+    "emmet": {
+        "syntax": "css",
+        "preferences": {
+            "caniuse.enabled": false,
+            "css.autoInsertVendorPrefixes": false
+        },
+        "snippets": {
+            "m:0a": "margin: 0 auto"
+        }
+    }
+}
