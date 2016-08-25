@@ -23,6 +23,7 @@
 .u-mb\:3r { margin-bottom: 3rem; }
 .u-ml\:0\.25r { margin-left: 0.25rem; }
 .u-ml\:1\.5r { margin-left: 1.5rem; }
+.u-mr\:0\.25r { margin-right: 0.25rem; }
 .u-mt\:1\.5r { margin-top: 1.5rem; }
 .u-mt\:1r { margin-top: 1rem; }
 .u-mw\:28\.125r { max-width: 28.125rem; }
@@ -31,11 +32,14 @@
 .u-op\:0\.5 { opacity: 0.5; }
 .u-p\:2\.25r { padding: 2.25rem; }
 .u-p\:2r { padding: 2rem; }
+.u-pb\:1\.5r { padding-bottom: 1.5rem; }
 .u-pb\:2\.25 { padding-bottom: 2.25em; }
 .u-pb\:2\.25r { padding-bottom: 2.25rem; }
 .u-pb\:5\.375r { padding-bottom: 5.375rem; }
+.u-pt\:1\.5r { padding-top: 1.5rem; }
 .u-pt\:2\.25r { padding-top: 2.25rem; }
 .u-pt\:2\.75r { padding-top: 2.75rem; }
+.u-pt\:3r { padding-top: 3rem; }
 .u-pt\:5r { padding-top: 5rem; }
 .u-ta\:c { text-align: center; }
 .u-td\:n { text-decoration: none; }
